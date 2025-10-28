@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    background-image: url(./components/images/hotel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .room-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .room-card {
+    background: blue;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .room-card:hover {
+    transform: translateY(-5px);
+  }
+  .room-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .room-info {
+    padding: 15px;
+  }
+  .price {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2d7a2d;
+  }
+  .select-btn {
+    background: #4facfe;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .select-btn:hover {
+    background: #00c6ff;
+  }
+  .booking-form {
+    max-width: 400px;
+    margin: auto;
+    background-color :lightskyblue ;
+    color :brown;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  .confirmation {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e0ffe0;
+    color: #2d7a2d;
+    max-width: 400px;
+  }
+  #but{
+    color:darkslategrey
+  }
